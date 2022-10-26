@@ -1,15 +1,19 @@
 :root {
     --main-orange: #DA9F5B;
     --main-green: #656D4A;
-    --main-light-gray: #FFFBF2;
+    --main-light-gray: #FFF9EB; 
+    --main-light-green: #A4AC86;
     --black: #000;
+    --invalid-red: #cc7f6a6b;
+    --main-font: 'Yanone Kaffeesatz', sans-serif;
+    --secondary-font: 'Libre Franklin', sans-serif;
 }
 
 body {
     margin: 0 auto;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 200;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
 }
 
@@ -22,7 +26,7 @@ body {
 }
 
 .subtitulo-4 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: var(--main-font);
     font-size: 2rem;
     color: var(--main-orange);
     margin: 0;
@@ -42,7 +46,7 @@ body {
 
 .seccion-titulo {
     text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: var(--main-font);
     font-size: 4rem;
     font-weight: 800;
     margin: 0;
@@ -50,11 +54,12 @@ body {
     letter-spacing: 2px;
 }
 
-/* Sección BANNER */
+/**********************/
+/*** Sección BANNER ***/
+/**********************/
 #banner {
     height: 80vh;
     background-image: linear-gradient(rgba(51, 33, 29, 0.6), rgba(51, 33, 29, 0.8)), url(../img/banner3.jpg);
-    background-color: rgba(51, 33, 29, 0.7);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -80,7 +85,7 @@ body {
 }
 
 #banner .nav ul li a:hover {
-    color: #DA9F5B;
+    color: var(--main-orange);
     border-bottom: 4px solid var(--main-orange);
 }
 
@@ -91,6 +96,7 @@ body {
 
 #banner .header {
     width: 1280px;
+    max-width: 95%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -108,7 +114,7 @@ body {
 }
 
 #banner h1 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: var(--main-font);
     font-size: 120px;
     margin: 0;
 }
@@ -116,15 +122,13 @@ body {
 #banner h2 {
     font-size: 16px;
     margin: 0;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 200;
 }
 
-
-
-/***********************/
-/**** Sección CARTA ****/
-/***********************/
+/*********************/
+/*** Sección CARTA ***/
+/*********************/
 #carta {
     background-image: linear-gradient(rgba(51, 33, 29, 0.6), rgba(51, 33, 29, 0.8)), url(../img/fondo_2.jpg);
     background-size: cover;
@@ -134,6 +138,7 @@ body {
 .carta-contenedor {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -144,7 +149,7 @@ body {
     border: 1px solid rgba(51, 33, 29, 0.9);
     border-radius: 10px;
     height: 200px;
-    width: 630px;
+    width: 49%;
     display: flex;
     overflow: hidden;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -152,14 +157,27 @@ body {
     background-color: #a4ac866b;
     transition: transform .3s;
 }
+#carta-foto-1 {
+    background-image: url(/img/taza_1.jpg);
+}
+#carta-foto-2 {
+    background-image: url(/img/taza_2.jpg);
+}
+#carta-foto-3 {
+    background-image: url(/img/taza_3.jpg);
+}
+#carta-foto-4 {
+    background-image: url(/img/taza_4.jpg);
+}
+#carta-foto-1, #carta-foto-2, #carta-foto-3, #carta-foto-4 {
+    background-size: cover;
+    width: 60%;
+    max-width: 60%;
+    box-sizing: border-box;
+}
 
 .carta-card:hover{
     transform: translateY(-0.5rem) scale(1.01); 
-}
-
-.carta-foto {
-    width: 50%;
-    height: 100%;
 }
 
 .carta-body {
@@ -168,14 +186,9 @@ body {
     color: var(--main-light-gray);
 }
 
-.carta-img {
-    object-fit: cover;
-    max-width: 100%;
-}
-
-/* Sección NOSOTROS */
-#nosotros {}
-
+/************************/
+/*** Sección NOSOTROS ***/
+/************************/
 .nosotros-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -248,9 +261,9 @@ body {
 
 .info article{
     width: auto;
-    padding-left: 10px;
-    border-left: var(--main-orange) 4px solid;
     justify-content: center;
+    border-left: var(--main-orange) 4px solid;
+    padding-left: 10px;
 }
 
 /* Estilos de tabla */
@@ -262,7 +275,7 @@ body {
     width: 564px;
     background-color: #a4ac866b;
     box-shadow: 0 6px 6px rgba(0,0,0,0.2);
-    
+    overflow: hidden;
 }
 
 .tabla th, .tabla td{
@@ -286,10 +299,6 @@ border-right: 0px;
 background-color: #A4AC86;
 border-radius: 10px;
 }
-  
- 
-  
-  
 
 /**********************/
 /** Sección RESERVAS **/
@@ -363,9 +372,13 @@ input[type="submit"]:focus,input[type="submit"]:active{
     box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.2);
 }
 
-input:invalid{ 
-    border-bottom-color: red;
-    color: red;
+input:focus:valid {
+    background-color: var(--main-green);
+
+}
+
+input:focus:invalid {
+    background-color: var(--invalid-red);
 }
 
 /********************/
@@ -377,16 +390,17 @@ footer {
     background-position: top;
     color: var(--main-light-gray);
     padding-bottom: 20px;
-}
-
-footer a {
-    color: var(--white);
-    text-decoration: none;
+    position: relative;    
 }
 
 footer .contenedor {
     justify-content: space-between;
     display: flex;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 footer img {

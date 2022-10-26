@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cefeteria de autor"/>
-    <meta name="author" content="yo"/>
+    <meta name="description" content="Kfé Co cafeteria de autor en Montevideo"/>
+    <meta name="author" content="Carolina Larroque"/>
+    <link rel="icon" href="/img/taza.svg" type="image/x-icon">
+    <title>Kfé Co. Cafetería</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
 </head>
 <body>             
     <!-- Seccion Banner -->
@@ -34,7 +35,6 @@
             <h2>compartiendo nuestra pasión por el café desde 2018</h2>
         </div>
     </section>
-    
 
     <!-- Seccion Nosotros -->
     <section id="nosotros" class="seccion">
@@ -47,14 +47,14 @@
             <img id="p5" class="item" src="img/grid_5.jpg" alt="imagen 5">
             <img id="p6" class="item" src="img/grid_6.jpg" alt="imagen 6">
         </div>
-        <div class="info">
+        <div class="contenedor info">
             <article>
-                <h3>NUESTROS LOCALES</h3>
-                <p><b class="texto-orange">Ciudad Vieja</b> - Sarandí 123</p>
-                <p><b class="texto-orange">Parque Rodó</b> - Gonzalo Ramirez 1234</p>
-                <p><b class="texto-orange">Buceo</b> - Luis Alberto de Herrera 1234</p>
+                <h3 class="texto-green">NUESTROS LOCALES</h3>
+                <p><b class="texto-green">Ciudad Vieja</b> - Sarandí 123</p>
+                <p><b class="texto-green">Parque Rodó</b> - Gonzalo Ramirez 1234</p>
+                <p><b class="texto-green">Buceo</b> - Luis Alberto de Herrera 1234</p>
             </article>
-            <article>
+            <section>
                 <table class="tabla">
                     <thead>
                         <tr>
@@ -80,9 +80,8 @@
                             <td>19:00 a 00:00 hs</td>
                         </tr>
                     </tbody>
-                </table>
-                
-            </article>
+                </table>                
+            </section>
         </div>
     </section>
     
@@ -92,8 +91,7 @@
         <div class="contenedor carta-contenedor">
             <!-- Carta 1 -->
             <article class="carta-card">
-                <div class="carta-foto">
-                    <img class="carta-img" src="/img/taza_1.jpg" alt="taza 1">
+                <div id="carta-foto-1">
                 </div>
                 <div class="carta-body"><br>
                     <h4 class="subtitulo-4">Cappuccino Frappé</h4>
@@ -102,8 +100,7 @@
             </article>
             <!-- Carta 2 -->
             <article class="carta-card">
-                <div class="carta-foto">
-                    <img class="carta-img" src="/img/taza_2.jpg" alt="taza 2">
+                <div id="carta-foto-2">
                 </div>
                 <div class="carta-body"><br>
                     <h4 class="subtitulo-4">Vainilla Latte</h4>
@@ -112,8 +109,7 @@
             </article>
             <!-- Carta 3 -->
             <article class="carta-card">
-                <div class="carta-foto">
-                    <img class="carta-img" src="/img/taza_3.jpg" alt="taza 3">
+                <div id="carta-foto-3">
                 </div>
                 <div class="carta-body"><br>
                     <h4 class="subtitulo-4">Caramel Latte</h4>
@@ -122,8 +118,7 @@
             </article>
             <!-- Carta 4 -->
             <article class="carta-card">
-                <div class="carta-foto">
-                    <img class="carta-img" src="/img/taza_4.jpg" alt="taza 4">
+                <div id="carta-foto-4">
                 </div>
                 <div class="carta-body"><br>
                     <h4 class="subtitulo-4">Iced Coffee</h4>
@@ -179,21 +174,24 @@
     <!-- Footer -->
     <footer>
         <div class="contenedor footer">
-            <div class="contacto">
+            <!-- Sección contacto -->
+            <div class="contacto overlay-top">
                 <img class="logo" src="img/logo.png" alt="imagen 6">
                 <h2>Kfé Co.</h2>
                 <p><a href="mailto:cafe@cafe.com">cafe@cafe.com</a></p>
                 <a href="tel:+59899999999">099 999 999</a>
             </div>
-
+            <!-- Sección redes sociales -->
             <div class="redes">
-                <img class="icono" src="img/fb.svg" alt="logo bicicleta de color blanco" title="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path fill="#FFFBF2" d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z" />
-                </svg>
-                <img class="icono" src="img/ig.svg" alt="logo bicicleta de color blanco" title="logo">
-                <img class="icono" src="img/wpp.svg" alt="logo bicicleta de color blanco" title="logo">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="icono" src="img/fb.svg" alt="logo facebook" title="logo">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="icono" src="img/ig.svg" alt="logo instagram" title="logo">
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img class="icono" src="img/wpp.svg" alt="logo whatsapp" title="logo">
+                </a>               
             </div>
         </div>
     </footer>
