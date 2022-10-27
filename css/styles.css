@@ -1,9 +1,16 @@
+/***************/
+/*** General ***/
+/***************/
+
+* {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-orange: #DA9F5B;
     --main-green: #656D4A;
-    --main-light-gray: #FFF9EB; 
+    --main-light-grey: #FFF9EB; 
     --main-light-green: #A4AC86;
-    --black: #000;
     --invalid-red: #cc7f6a6b;
     --main-font: 'Yanone Kaffeesatz', sans-serif;
     --secondary-font: 'Libre Franklin', sans-serif;
@@ -40,8 +47,8 @@ body {
 }
 
 .seccion {
-    background-color: var(--main-light-gray);
-    padding-bottom: 50px;
+    background-color: var(--main-light-grey);
+    padding-bottom: 70px;
 }
 
 .seccion-titulo {
@@ -52,7 +59,26 @@ body {
     margin: 0;
     padding: 50px 0;
     letter-spacing: 2px;
+    animation: 2s titulo-effect ease-out ;
 }
+
+@keyframes titulo-effect {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 /**********************/
 /*** Sección BANNER ***/
@@ -65,7 +91,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    color: var(--main-light-gray);
+    color: var(--main-light-grey);
 }
 
 #banner .logo {
@@ -91,7 +117,7 @@ body {
 
 #banner .nav ul li a {
     text-decoration: none;
-    color: var(--main-light-gray);
+    color: var(--main-light-grey);
 }
 
 #banner .header {
@@ -119,7 +145,7 @@ body {
     margin: 0;
 }
 
-#banner h2 {
+#banner p em {
     font-size: 16px;
     margin: 0;
     font-family: var(--secondary-font);
@@ -133,6 +159,7 @@ body {
     background-image: linear-gradient(rgba(51, 33, 29, 0.6), rgba(51, 33, 29, 0.8)), url(../img/fondo_2.jpg);
     background-size: cover;
     background-position: top;
+    position: relative;   
 }
 
 .carta-contenedor {
@@ -183,7 +210,7 @@ body {
 .carta-body {
     padding: 20px;
     width: 50%;
-    color: var(--main-light-gray);
+    color: var(--main-light-grey);
 }
 
 /************************/
@@ -288,7 +315,7 @@ body {
     color: var(--main-orange);
 }
 
-.tabla .importante{
+.tabla .resaltar{
     background-color: var(--main-green);
     color: var(--main-orange);
     font-weight: 800;
@@ -373,7 +400,7 @@ input[type="submit"]:focus,input[type="submit"]:active{
 }
 
 input:focus:valid {
-    background-color: var(--main-green);
+    background-color: var(--main-light-green);
 
 }
 
@@ -388,7 +415,7 @@ footer {
     background-image: linear-gradient(rgba(51, 33, 29, 0.6), rgba(51, 33, 29, 0.8)), url(../img/fondo_2.jpg);
     background-size: cover;
     background-position: top;
-    color: var(--main-light-gray);
+    color: var(--main-light-grey);
     padding-bottom: 20px;
     position: relative;    
 }

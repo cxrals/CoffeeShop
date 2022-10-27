@@ -8,10 +8,12 @@
     <meta name="author" content="Carolina Larroque"/>
     <link rel="icon" href="/img/taza.svg" type="image/x-icon">
     <title>Kfé Co. Cafetería</title>
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>             
@@ -20,7 +22,7 @@
         <!-- Header -->
         <header class="header">
             <!-- Logo -->
-            <img class="logo" src="img/logo.png" alt="imagen del logo">
+            <img class="logo" src="img/logo.png" alt="logo de Kfe Co" title="logo de Kfe Co">
             <!-- Menú de navegación -->
             <nav class="nav">
                 <ul>
@@ -32,7 +34,7 @@
         </header>
         <div class="contenedor overlay-bottom ">
             <h1>Café <span class="texto-orange">DE ESPECIALIDAD</span></h1>
-            <h2>compartiendo nuestra pasión por el café desde 2018</h2>
+            <p><em>compartiendo nuestra pasión por el café desde 2018</em></p>
         </div>
     </section>
 
@@ -40,19 +42,19 @@
     <section id="nosotros" class="seccion">
         <h2 class="seccion-titulo texto-green">NOSOTROS</h2>
         <div class="contenedor nosotros-contenedor">
-            <img id="p1" class="item" src="img/grid_1.jpg" alt="imagen 1">
-            <img id="p2" class="item" src="img/grid_2.jpg" alt="imagen 2">
-            <img id="p3" class="item" src="img/grid_3.jpg" alt="imagen 3">
-            <img id="p4" class="item" src="img/grid_7.jpg" alt="imagen 4">
-            <img id="p5" class="item" src="img/grid_5.jpg" alt="imagen 5">
-            <img id="p6" class="item" src="img/grid_6.jpg" alt="imagen 6">
+            <img id="p1" class="item" src="img/grid_1.jpg" alt="imagen 1" title="planta de cafe">
+            <img id="p2" class="item" src="img/grid_2.jpg" alt="imagen 2" title="preparacion de cafe">
+            <img id="p3" class="item" src="img/grid_3.jpg" alt="imagen 3" title="granos de cafe">
+            <img id="p4" class="item" src="img/grid_7.jpg" alt="imagen 4" title="local ciudad vieja">
+            <img id="p5" class="item" src="img/grid_5.jpg" alt="imagen 5" title="local buceo">
+            <img id="p6" class="item" src="img/grid_6.jpg" alt="imagen 6" title="local parque rodo">
         </div>
         <div class="contenedor info">
             <article>
                 <h3 class="texto-green">NUESTROS LOCALES</h3>
-                <p><b class="texto-green">Ciudad Vieja</b> - Sarandí 123</p>
-                <p><b class="texto-green">Parque Rodó</b> - Gonzalo Ramirez 1234</p>
-                <p><b class="texto-green">Buceo</b> - Luis Alberto de Herrera 1234</p>
+                <p><strong class="texto-green">Ciudad Vieja</strong> - Sarandí 123</p>
+                <p><strong class="texto-green">Parque Rodó</strong> - Gonzalo Ramirez 1234</p>
+                <p><strong class="texto-green">Buceo</strong> - Luis Alberto de Herrera 1234</p>
             </article>
             <section>
                 <table class="tabla">
@@ -65,17 +67,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="importante">Lunes a Viernes</td>
+                            <td class="resaltar">Lunes a Viernes</td>
                             <td>11:30 a 15:00 hs</td>
                             <td>18:30 a 22:00 hs</td>
                         </tr>
                         <tr>
-                            <td class="importante">Sábados</td>
+                            <td class="resaltar">Sábados</td>
                             <td>12:00 a 16:00 hs</td>
                             <td>19:00 a 02:00 hs</td>
                         </tr>
                         <tr>
-                            <td class="importante">Domingos</td>
+                            <td class="resaltar">Domingos</td>
                             <td>12:00 a 16:00 hs</td>
                             <td>19:00 a 00:00 hs</td>
                         </tr>
@@ -86,7 +88,7 @@
     </section>
     
     <!-- Seccion Carta -->
-    <section id="carta" class="seccion">
+    <section id="carta" class="seccion overlay-bottom overlay-top">
         <h2 class="seccion-titulo texto-orange">CARTA</h2>
         <div class="contenedor carta-contenedor">
             <!-- Carta 1 -->
@@ -94,7 +96,7 @@
                 <div id="carta-foto-1">
                 </div>
                 <div class="carta-body"><br>
-                    <h4 class="subtitulo-4">Cappuccino Frappé</h4>
+                    <h3 class="subtitulo-4">Cappuccino Frappé</h3>
                     <p>Frappuccino a base de café. Deliciosa mezcla combinada por café, leche y chocolate, batido con hielo. Finalizado con crema batida y salsa de mocha.</p>
                 </div>
             </article>
@@ -103,7 +105,7 @@
                 <div id="carta-foto-2">
                 </div>
                 <div class="carta-body"><br>
-                    <h4 class="subtitulo-4">Vainilla Latte</h4>
+                    <h3 class="subtitulo-4">Vainilla Latte</h3>
                     <p>Toda la intensidad de un espresso 100% arábico de tueste natural, coronado con una gran capa de cremosa y suave leche endulzada y toques de vainilla.</p>
                 </div>
             </article>
@@ -112,7 +114,7 @@
                 <div id="carta-foto-3">
                 </div>
                 <div class="carta-body"><br>
-                    <h4 class="subtitulo-4">Caramel Latte</h4>
+                    <h3 class="subtitulo-4">Caramel Latte</h3>
                     <p>Suave caramelo, leche y café tostado naturalmente con el punto justo de intensidad. Finalizado con el característico dibujo de caramelo. </p>
                 </div>
             </article>
@@ -121,7 +123,7 @@
                 <div id="carta-foto-4">
                 </div>
                 <div class="carta-body"><br>
-                    <h4 class="subtitulo-4">Iced Coffee</h4>
+                    <h3 class="subtitulo-4">Iced Coffee</h3>
                     <p>A base de granos de café colombianos, endulzada con vainilla y finalizada con crema de leche. </p>
                 </div>
             </article>
@@ -147,7 +149,7 @@
 
                 <fieldset>
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+                    <input type="number" id="cantidad" name="cantidad" placeholder="0" min="1" required>
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" required>
                 </fieldset>
@@ -161,7 +163,7 @@
                         </ul>
                         <label for="terminos">
                             <input type="checkbox" id="terminos" name="terminos" value="true" required>
-                            Acepto los <b>términos y condiciones</b>
+                            Acepto los <strong>términos y condiciones</strong>
                         </label>
                     </div>
                     <div class="boton">
@@ -176,7 +178,7 @@
         <div class="contenedor footer">
             <!-- Sección contacto -->
             <div class="contacto overlay-top">
-                <img class="logo" src="img/logo.png" alt="imagen 6">
+                <img class="logo" src="img/logo.png" alt="logo Kfe"  title="logo Kfe">
                 <h2>Kfé Co.</h2>
                 <p><a href="mailto:cafe@cafe.com">cafe@cafe.com</a></p>
                 <a href="tel:+59899999999">099 999 999</a>
@@ -184,13 +186,13 @@
             <!-- Sección redes sociales -->
             <div class="redes">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <img class="icono" src="img/fb.svg" alt="logo facebook" title="logo">
+                    <img class="icono" src="img/fb.svg" alt="logo facebook" title="logo facebook">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img class="icono" src="img/ig.svg" alt="logo instagram" title="logo">
+                    <img class="icono" src="img/ig.svg" alt="logo instagram" title="logo instagram">
                 </a>
                 <a href="https://web.whatsapp.com/" target="_blank">
-                    <img class="icono" src="img/wpp.svg" alt="logo whatsapp" title="logo">
+                    <img class="icono" src="img/wpp.svg" alt="logo whatsapp" title="logo whatsapp">
                 </a>               
             </div>
         </div>
