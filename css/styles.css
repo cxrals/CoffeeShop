@@ -150,6 +150,7 @@ body {
     margin: 0;
     font-family: var(--secondary-font);
     font-weight: 200;
+    animation: 2s titulo-effect ease-out ;
 }
 
 /*********************/
@@ -185,16 +186,16 @@ body {
     transition: transform .3s;
 }
 #carta-foto-1 {
-    background-image: url(/img/taza_1.jpg);
+    background-image: url(../img/taza_1.jpg);
 }
 #carta-foto-2 {
-    background-image: url(/img/taza_2.jpg);
+    background-image: url(../img/taza_2.jpg);
 }
 #carta-foto-3 {
-    background-image: url(/img/taza_3.jpg);
+    background-image: url(../img/taza_3.jpg);
 }
 #carta-foto-4 {
-    background-image: url(/img/taza_4.jpg);
+    background-image: url(../img/taza_4.jpg);
 }
 #carta-foto-1, #carta-foto-2, #carta-foto-3, #carta-foto-4 {
     background-size: cover;
